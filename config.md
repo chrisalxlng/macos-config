@@ -184,8 +184,8 @@ brew install \
 - Update npm to its latest version
     - `npm install -g npm@latest`
 - Set defaults for npm
-    - `npm set init.author.name "your name"`
-    - `npm set init.author.email "you@example.com"`
+    - `npm config set init-author-name="your name"`
+    - `npm config set init-author-email="you@example.com"`
 - List all Node installations
     - `nvm list`
 - *Optional:* Install other Node versions
