@@ -178,10 +178,16 @@ brew install \
     
 ### NVM
 
+- Complete installation
+    - `mkdir ~/.nvm`
+    - `echo "export NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> .zshrc`
+    - `source ~/.zshrc`
+- Check if nvm installation was successful
+    - `nvm -v`
 - Install latest LTS version
     - [Find latest LTS version](https://nodejs.org/en/)
     - `nvm install <latest LTS version>`
-- Check if installation was succesful
+- Check if node installation was successful
     - `node -v && npm -v`
 - Update npm to its latest version
     - `npm install -g npm@latest`
