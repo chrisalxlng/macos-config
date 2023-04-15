@@ -1,38 +1,60 @@
-# macOS Configuration (Monterey, last updated: December 2022)
+# macOS Configuration (Monterey, last updated: April 2023)
 
 ## App Store
 
 - Install Magnet
 
+## Safari Installations
+
+- Install Arc browser
+
+## Arc
+
+### Manage Flags
+
+1. Navigate to `arc://flags`
+2. Enable `#high-efficiency-mode-available`
+3. Enable `#enable-parallel-downloading`
+4. Relaunch Arc
+
+### Manage Spaces & Profiles
+
+- Setup
+
 ## System Preferences
 
-### General
+### Appearance
 
-- Change Accent Color
+- Dark mode
+- Change accent color to "Purple"
 
 ### Dock
 
-- Remove most applications from Dock
+- Remove most applications from dock
 - Position -> "Left"
-- Automatic Hide
-- Smaller Dock
+- Automatic hide
+- Smaller dock
 - "Minimize windows using" -> "Scale effect"
 - "Show recent applications in Dock" off
 - "Show indicators for open applications" on
-- Battery -> "Show Percentage"
+
+### Control Center
+
+- Battery -> "Show Percentage in Menu Bar"
 
 ### Notifications
 
-- Off, except Headphones & Find My
+- Off, except Arc & Find My
 
-### Siri
+### Spotlight & Siri
 
-- Disable
+- Disable Siri
 
 ### Trackpad
 
-- Disable Notification Center
-- Disable Look Up & Data Detectors
+- Disable "Notification Center" gesture
+- Disable "Look Up & Data Detectors" gesture
+- Cursor speed: 9/10
 
 ### Keyboard
 
@@ -87,11 +109,8 @@
 
 - Remove all unnecessary apps
 
-### Trackpad
-
-- Speed: 9/10
-
 ### Accessibility
+
 - Scroll Speed: 6/8
 
 ## System Preferences (Terminal)
@@ -125,13 +144,8 @@
 ```
 brew install --cask \
   google-chrome  \
-  firefox \
   visual-studio-code \
   docker \
-  discord \
-  signal \
-  whatsapp \
-  figma
 ```
 
 ### Terminal apps
@@ -140,28 +154,8 @@ brew install --cask \
 brew install \
   git \
   nvm \
-  pnpm \
   yarn
 ```
-
-## GUI apps
-
-### Google Chrome
-
-- Preferences
-    - Enable dark mode
-    - Never save passwords
-    - Always show bookmarks
-- Chrome Developer Tools
-    - Enable dark mode
-    - Network -> only "Fetch/XHR"
-- Chrome Extensions
-    - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
-    - [Live color picker](https://chrome.google.com/webstore/detail/live-color-picker/ocfboephblnapfbccjigejhblhkpgflj)
-    
-### Visual Studio Code
-
-- Log into GitHub and enable Settings Sync
 
 ## Terminal apps
 
@@ -170,9 +164,6 @@ brew install \
 - Set global name and email
     - `git config --global user.name "Your Name"`
     - `git config --global user.email "you@your-domain.com"`
-- Improved log
-    - `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
-    - Now use: `git lg`
 - Print global git configuration
     - `git config --list`
     
@@ -200,3 +191,9 @@ brew install \
     - `nvm install <version> --reinstall-packages-from=$(nvm current)`
     - Use specific version: `nvm use <version>`
     - Make specific version default: `nvm alias default <version>`
+
+## GUI apps
+    
+### Visual Studio Code
+
+- Log into GitHub and enable Settings Sync
