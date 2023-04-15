@@ -16,6 +16,8 @@
 2. Enable `#high-efficiency-mode-available`
 3. Enable `#enable-parallel-downloading`
 4. Relaunch Arc
+5. Navigate to `arc://settings`
+6. Enable `Performance` > `Memory Saver`
 
 ### Manage Spaces & Profiles
 
@@ -59,12 +61,14 @@
 ### Keyboard
 
 - Text
-    - disable "Autocorrect"
-    - disable "Capitalise word automatically"
-    - disable "Add full stop with double-space"
-    - disable "Use smart quotes and dashes"
-    - use " for double quotes
-    - use ' for single quotes
+    - Disable "Autocorrect"
+    - Disable "Capitalise word automatically"
+    - Disable "Add full stop with double-space"
+    - Disable "Use smart quotes and dashes"
+    - Use " for double quotes
+    - Use ' for single quotes
+- Shortcuts
+    - Disable `Spotlight`
     
 ### Spotlight
 
@@ -146,6 +150,7 @@ brew install --cask \
   google-chrome  \
   visual-studio-code \
   docker \
+  raycast
 ```
 
 ### Terminal apps
@@ -197,3 +202,13 @@ brew install \
 ### Visual Studio Code
 
 - Log into GitHub and enable Settings Sync
+
+### Raycast
+
+- Disable all built-in extensions except `Calendar`, `Clipboard History`, `File Search` & `System`
+- Install `Color Picker` extension for menu bar color picker
+    - Disable all commands except menu bar command
+- Add alias for `Screenshot`
+- Configure `Calendar` extension
+    - Show Events in Menu Bar: `5 minutes before`
+    - Select desired calendars
